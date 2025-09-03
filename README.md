@@ -2,11 +2,11 @@
 
 ![Node.js](https://img.shields.io/badge/Node.js-18.x-green.svg) ![Express.js](https://img.shields.io/badge/Express.js-4.x-blue.svg) ![TypeScript](https://img.shields.io/badge/TypeScript-5.x-blue.svg) ![Socket.IO](https://img.shields.io/badge/Socket.IO-4.x-yellow.svg) ![Prisma](https://img.shields.io/badge/Prisma-5.x-purple.svg)
 
-This repository contains the backend server for **EchoSphere**, a modern real-time chat application. It's built with Node.js, Express, and Socket.IO, following a scalable, layered architecture for maintainability.
+This repository contains the backend server for **ChatBuddy**, a modern real-time chat application. It's built with Node.js, Express, and Socket.IO, following a scalable, layered architecture for maintainability.
 
 ---
 
-## ## Features ✨
+## Features ✨
 
 * **Real-time Messaging:** Bidirectional communication using WebSockets (Socket.IO).
 * **Layered Architecture:** Follows a clean MVC-like pattern (Routes → Controllers → Services → Repositories) for a clear separation of concerns.
@@ -16,7 +16,7 @@ This repository contains the backend server for **EchoSphere**, a modern real-ti
 
 ---
 
-## ## Architecture Overview
+## Architecture Overview
 
 The backend is structured in a decoupled, layered architecture to make it scalable and easy to test.
 
@@ -27,7 +27,7 @@ The backend is structured in a decoupled, layered architecture to make it scalab
 
 ---
 
-## ## Getting Started
+## Getting Started
 
 ### ### Prerequisites
 
@@ -36,7 +36,7 @@ Before you begin, ensure you have the following installed:
 * [npm](https://www.npmjs.com/) or [yarn](https://yarnpkg.com/)
 * A PostgreSQL database (e.g., via [Supabase](https://supabase.com/))
 
-### ### Installation & Setup
+### Installation & Setup
 
 1.  **Clone the repository:**
     ```bash
@@ -74,9 +74,9 @@ Before you begin, ensure you have the following installed:
 
 ---
 
-## ## API Endpoints & WebSocket Events
+## API Endpoints & WebSocket Events
 
-### ### REST API
+### REST API
 
 All REST endpoints are prefixed with `/api/v1`.
 
@@ -85,7 +85,7 @@ All REST endpoints are prefixed with `/api/v1`.
 | `GET`  | `/chats`        | Fetches a list of all chats.  |
 | `POST` | `/chats`        | Creates a new chat.           |
 
-### ### WebSocket Events
+### WebSocket Events
 
 The server listens for and emits the following events:
 
